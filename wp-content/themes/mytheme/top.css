@@ -1,3 +1,9 @@
+/* どこでも使用可能 */
+:root {
+  --text-color: #444;
+  --main-color: #24354d;
+}
+
 h1 {
   color: #24354d;
   font-size: 18px;
@@ -59,7 +65,7 @@ header {
 }
 
 .menu-link {
-  color: #24354d;
+  color: var(--main-color);
   font-size: 16px;
   text-decoration: none;
 }
@@ -69,7 +75,7 @@ footer {
   justify-content: space-between;
   gap: 40px;
   align-items: center;
-  background-color: #24354d;
+  background-color: var(--main-color);
   padding: 20px;
 }
 
