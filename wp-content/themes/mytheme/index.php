@@ -39,5 +39,14 @@
     <div class="square blue"></div>
   </div>
   <?php wp_footer();?>
+
+ <footer>
+  <h2><?php bloginfo('name'); ?></h2>
+    <div class="footer__menu">
+      
+      <a href="/" class="footer__menu-link">top</a>
+      <a href="/blog" class="footer__menu-link">blog</a>
+    </div>
+ </footer>
 </body>
 </html>
