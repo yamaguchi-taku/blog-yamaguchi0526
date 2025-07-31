@@ -9,6 +9,23 @@ h1 {
   font-size: 18px;
 }
 
+time {
+  display: block;
+  color: #5f799c;
+  font-size: 12px;
+}
+
+.article__title {
+  color: #24354d;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.article_tag {
+  color: #5f799c;
+  font-size: 12px;
+  background-color: #eef4fa;
+}
 .square {
   width: 100px;
   height: 100px;
