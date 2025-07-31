@@ -34,14 +34,24 @@
   ?>
   <!-- 正方形を横に３つ並べる方法 -->
   <div class="container">
-    <div>
-      <div class="square red"></div>
+    <div class="article">
+      <div class="article__thumbnail red"></div>
       <time datetime="2025-07-31">2025年7月31日</time>
       <p class="article__title">タイトル</p>
       <span class="article_tag">タグ</span>
     </div>
-    <div class="square green"></div>
-    <div class="square blue"></div>
+    <div class="article">
+      <div class="article__thumbnail blue"></div>
+      <time datetime="2025-07-31">2025年7月31日</time>
+      <p class="article__title">タイトル</p>
+      <span class="article_tag">タグ</span>
+    </div>
+    <div class="article">
+      <div class="article__thumbnail green"></div>
+      <time datetime="2025-07-31">2025年7月31日</time>
+      <p class="article__title">タイトル</p>
+      <span class="article_tag">タグ</span>
+    </div>
   </div>
   <?php wp_footer();?>
 

@@ -1,4 +1,7 @@
 /* どこでも使用可能 */
+p {
+  margin: 0;
+}
 :root {
   --text-color: #444;
   --main-color: #24354d;
@@ -9,28 +12,41 @@ h1 {
   font-size: 18px;
 }
 
+.article {
+  width: 282px;
+}
+
+.article__thumbnail {
+  width: 100%;
+  height: 100px;
+}
+
 time {
   display: block;
   color: #5f799c;
   font-size: 12px;
+  padding-top: 7px;
+  margin-bottom: 0.25rem;
 }
 
 .article__title {
   color: #24354d;
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 0.5rem;
 }
 
 .article_tag {
   color: #5f799c;
   font-size: 12px;
   background-color: #eef4fa;
+  margin: 0 7px 7px 0;
+  padding: 4px 8px;
 }
 .square {
   width: 100px;
   height: 100px;
   display: inline-block;
-  margin: 10px;
 }
 
 .red {
