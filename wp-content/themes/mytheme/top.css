@@ -43,6 +43,7 @@ time {
   margin: 0 7px 7px 0;
   padding: 4px 8px;
 }
+
 .square {
   width: 100px;
   height: 100px;
@@ -81,6 +82,39 @@ time {
 
 .blue {
   background-color: blue;
+}
+
+.column__date {
+  width: 70%;
+}
+.column__thumbnail {
+  width: 30%;
+  height: 100px;
+}
+
+.column__title {
+  color: #24354d;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.column_tag {
+  color: #5f799c;
+  font-size: 12px;
+  background-color: #eef4fa;
+  margin: 0 7px 7px 0;
+  padding: 4px 8px;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  /* 中央寄せ（任意） */
+  gap: 10px;
+  /* 正方形の間隔 */
+  margin-top: 50px;
+  width: 1000px;
 }
 
 header {

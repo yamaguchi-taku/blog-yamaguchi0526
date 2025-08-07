@@ -53,6 +53,51 @@
       <span class="article_tag">タグ</span>
     </div>
   </div>
+  <div class="column">
+     <div class="column__thumbnail red"></div>
+     <div class="column__date">  
+        <time datetime="2025-08-07">2025年8月7日</time>
+        <p class="column__title">タイトル</p>
+        <span class="column_tag">タグ</span>
+     </div>
+      </div>
+     <div class="column">
+       <div class="column__thumbnail blue"></div>
+       <div class="column__date">  
+          <time datetime="2025-08-07">2025年8月7日</time>
+          <p class="column__title">タイトル</p>
+          <span class="column_tag">タグ</span>
+      </div>
+     </div>
+      <div class="column">
+        <div class="column__thumbnail green"></div>
+        <div class="column__date">  
+           <time datetime="2025-08-07">2025年8月7日</time>
+           <p class="column__title">タイトル</p>
+           <span class="column_tag">タグ</span>
+      </div>
+     </div>
+    
+     <?php if ( have_posts() ) : ?>
+    <ul>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <li>
+          <a href="<?php the_permalink(); ?>">
+
+           <?php if ( has_post_thumbnail() ) : ?>
+            <?php the_post_thumbnail('thumbnail'); // ← サムネイル表示（サイズ指定可） ?>
+          <?php endif; ?>
+            
+          <?php the_title(); ?></a>
+          <p><?php the_excerpt(); ?></p>
+        </li>
+      <?php endwhile; ?>
+    </ul>
+  <?php else : ?>
+    <p>記事が見つかりませんでした。</p>
+  <?php endif; ?>
+
+ </div>
   <?php wp_footer();?>
 
  <footer>
